@@ -1,2 +1,2 @@
-# Mitochondrial DNA Research
+# Mitochondrial DNA Knowledge Graph
  
