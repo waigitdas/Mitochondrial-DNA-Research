@@ -10,6 +10,6 @@ Missing variants are detected by subtracting the sequence variants from the path
  <li>Ony 3% of Genbank sequences have all thedefining variants required for the assigned haplogroup.</li>
  <li>At leasst one sequence is so affected in 99% of the haplogroups for which there is an assignment</li>
  <li>Traversals will fail in all of the paths from Eve to these haplogroups.</li>
- <li>The variant C16189T is the most common missed variant</li>
+ <li>The variant C16189T is the most common missed variant and is <a href="https://github.com/waigitdas/Mitochondrial-DNA-Research/tree/main/Knowledge_Graph/Analytics/Haplogroup_assignments">discussed here</a></li>
  <li></li>
 </ol>
