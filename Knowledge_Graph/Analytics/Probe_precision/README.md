@@ -7,3 +7,5 @@ The in silico probes used in this studies were developed using brute force metho
 Probes have greater specificity than individual variants because probes include unique sets of adjacent variants.The haplottree is defined by variants that may define multiple branches. In all cases, probes including the defining variant are different and distinct for a single haplotree branch. 
 
 Back mutations are at positions where there are probes targeting the homologous region. 
+
+Probes identify mutations associated  with mitochondrial disorders at a frequrncy similar to that in screened populations. 
