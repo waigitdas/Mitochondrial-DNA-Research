@@ -11,6 +11,11 @@ This project intended to replicate these assignmentsusing graph methods. That ef
 
 </ol>
 
+The C16189T variant in mitochondrial DNA has been identified as a challenging marker due to its high recurrence and potential for misidentification in automated haplogroup classification tools. Studies have reported heteroplasmy at this position, indicating the coexistence of multiple mitochondrial DNA variants within an individual. For instance, research has shown that the level of heteroplasmy of the C16189T variant remained stable over time in cervical cells, suggesting its persistence within individuals.
+pmc.ncbi.nlm.nih.gov
+Additionally, the C16189T variant has been associated with various multifactorial diseases, such as metabolic syndrome and endometrial cancer, highlighting its clinical significance.
+researchgate.net
+These findings underscore the importance of precise variant detection and interpretation in mitochondrial DNA studies, as misidentification can lead to erroneous haplogroup assignments and impact phylogenetic reconstructions.
 
 
 | Variants Combination               | Count  |
