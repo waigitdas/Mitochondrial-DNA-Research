@@ -32,6 +32,6 @@ apoc.coll.subtract(path_variants, sequence_variants)
 - **Only 3%** of GenBank sequences contain all the defining variants required for their assigned haplogroup.  
 - **At least one sequence** in **99% of haplogroups** is missing required variants.  
 - **Traversal failures:** All paths from Eve to a haplogroup node fail at some point due to missing variants.  
-- **C16189T is the most commonly missed variant**, discussed in detail [here].  
-- **"Missing" variant regions often contain mutations**—just not the ones expected to be there. See the discussion on **back mutations** [here].  
+- **C16189T is the most commonly missed variant**, discussed in detail <a href="https://github.com/waigitdas/Mitochondrial-DNA-Research/tree/main/Knowledge_Graph/Analytics/Haplogroup_assignments">here</a>  
+- **"Missing" variant regions often contain mutations**—just not the ones expected to be there. See the discussion on **back mutations** <a href="https://github.com/waigitdas/Mitochondrial-DNA-Research/tree/main/Knowledge_Graph/Analytics/Back_mutations">here</a>.  
 
