@@ -4,7 +4,7 @@ Back mutations have traditionally been used in phylogenetics to describe variant
 
 <img src="https://github.com/waigitdas/Mitochondrial-DNA-Research/blob/main/Knowledge_Graph/Analytics/Back_mutations/haplotree_traversal_with%20back_and_missing_variants.jpeg" width="50%" height="50%">
  
-The Excel workbooks in this folderand their worksheets have the Cypher query and explanatory comments at the bottom.
+The Excel workbooks in this folder and their worksheets have the Cypher query and explanatory comments at the bottom.
 
 Key takeaways are:
 <ol>
