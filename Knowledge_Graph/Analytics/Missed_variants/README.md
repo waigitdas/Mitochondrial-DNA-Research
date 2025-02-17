@@ -1,5 +1,6 @@
-# Missing Variants
- <h3>Only 3% of sequences have all their haplogroup's defining variants!"</h3>
+
+# Missing Variants   
+<h3><strong><em>Only 3% of sequences have all their haplogroup's defining variants!</em></strong></h3>
 
  
 The knowledge graph have List of variants for each Genbank sequence and two Lists for each dnode tree branch, one for the branch defining variants and the other forthe path variants which accrue during the traversal from Eve to the branch. List is a dattype in the knowledge graph that represent <b>sets</b> which can be analyzed using set algebra..
