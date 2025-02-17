@@ -7,7 +7,22 @@ This project intended to replicate these assignmentsusing graph methods. That ef
 <ol>
  <li>Traversals to the assiggned hapolgroup node were successful foe only 34% of the Genbank sequences.</li>
  <li>The C16189T was a common "missed variant" and ignoring thisprwould increase the success rate to ~60%</li>
- <li>C16189T was frequenctly annotated andWhen the present methods identified the closely adjacent T16187d and 16188.1T variants </li>
- <li></li>
- <li></li>
+ <li>Sequences whose haplogroup required C169185 often did not have it, but was requenctly annotated with the closely adjacent T16187d and 16188.1T variants </li>
+
 </ol>
+
+
+
+| Variants Combination               | Count  |
+|-------------------------------------|--------|
+| T16187d                            | 8059   |
+| T16187d, 16188.1T                   | 35486  |
+| C16189T                            | 206    |
+| T16187d, C16189T                    | 77     |
+| 16188.1T                           | 94     |
+| T16187d, C16189T, 16188.1T          | 5      |
+| T16187d, 16188.1T, C16189T          | 1      |
+
+
+
+<img src="https://github.com/waigitdas/Mitochondrial-DNA-Research/blob/main/Knowledge_Graph/images/C16189T_Veen_diagram.png" width="50%" height="50%">
