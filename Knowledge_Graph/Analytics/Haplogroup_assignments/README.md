@@ -10,12 +10,9 @@ This project intended to replicate these assignmentsusing graph methods. That ef
  <li>Sequences whose haplogroup required C169185 often did not have it, but was requenctly annotated with the closely adjacent T16187d and 16188.1T variants </li>
 
 </ol>
+The C16189T variant has long been recognized as a problematic marker in mitochondrial DNA studies due to its high recurrence and frequent misidentification in automated haplogroup classification tools. In the knowledge graph analysis, discrepancies in Haplogrep3’s variant calls flagged this issue, as the tool identified C16189T where the raw sequence data instead revealed a combination of T16187d and 16188.1T. This suggests that the widely accepted presence of C16189T in haplogroup definitions may be, at least in some cases, an artifact of alignment errors rather than a true defining mutation. The implications extend beyond this single variant—if a fundamental marker can be repeatedly misclassified, it raises broader concerns about the reliability of haplogroup assignments and the validity of the haplotree itself. Rather than an isolated error, this case serves as further evidence that the haplotree and its underlying classification tools are built upon assumptions that do not always hold up under closer scrutiny.
 
-The C16189T variant in mitochondrial DNA has been identified as a challenging marker due to its high recurrence and potential for misidentification in automated haplogroup classification tools. Studies have reported heteroplasmy at this position, indicating the coexistence of multiple mitochondrial DNA variants within an individual. For instance, research has shown that the level of heteroplasmy of the C16189T variant remained stable over time in cervical cells, suggesting its persistence within individuals.
-pmc.ncbi.nlm.nih.gov
-Additionally, the C16189T variant has been associated with various multifactorial diseases, such as metabolic syndrome and endometrial cancer, highlighting its clinical significance.
-researchgate.net
-These findings underscore the importance of precise variant detection and interpretation in mitochondrial DNA studies, as misidentification can lead to erroneous haplogroup assignments and impact phylogenetic reconstructions.
+.
 
 
 | Variants Combination               | Count  |
