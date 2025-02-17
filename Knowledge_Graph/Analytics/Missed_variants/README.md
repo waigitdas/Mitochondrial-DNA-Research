@@ -2,17 +2,36 @@
 # Missing Variants   
 <h3><strong><em>Only 3% of sequences have all their haplogroup's defining variants!</em></strong></h3>
 
- 
-The knowledge graph have List of variants for each Genbank sequence and two Lists for each dnode tree branch, one for the branch defining variants and the other forthe path variants which accrue during the traversal from Eve to the branch. List is a dattype in the knowledge graph that represent <b>sets</b> which can be analyzed using set algebra..
+The knowledge graph contains a **list of variants** for each GenBank sequence and **two lists for each dnode tree branch**:  
+1. **Branch-defining variants** – specific to the branch.  
+2. **Path variants** – those that accumulate along the traversal from Eve to the branch.  
 
-The Neo4j apoc.coll.* functions efficiently manage set algebra, including subtraction (−) with apoc.coll.subtract, intersection (∩) with apoc.coll.intersection, containment (⊆) with apoc.coll.containsAll, union (∪) with apoc.coll.union, disjointness (∅) with apoc.coll.disjoint, distinct element extraction (∪ᵢ) with apoc.coll.toSet, list flattening (⋃) with apoc.coll.flatten, duplicate neighbor removal (≡) with apoc.coll.dropDuplicateNeighbors, and sorting (⇑) with apoc.coll.sort, enabling flexible and optimized collection handling in Cypher queries.
+In the knowledge graph, **lists represent sets**, which can be analyzed using **set algebra**.  
 
-Missing variants are detected using set algebra by subtracting the sequence variants from the path_variants. In the Excel workbook in this folder, we see these facts:
+## Set Algebra in Neo4j  
+Neo4j's `apoc.coll.*` functions efficiently manage set operations, including:  
 
-<ol>
- <li>Ony 3% of Genbank sequences have all the defining variants required for the assigned haplogroup.</li>
- <li>At leasst one sequence is so affected in 99% of the haplogroups for which there is an assignment</li>
- <li>Traversals from Eve to the haplogroup graph node will fail in all of the paths.</li>
- <li>The variant C16189T is the most common missed variant and is <a href="https://github.com/waigitdas/Mitochondrial-DNA-Research/tree/main/Knowledge_Graph/Analytics/Haplogroup_assignments">discussed here</a></li>
- <li>"Missing" variants regions have mutations but not those presumed to bemissing. See the discussion about <a href="https://github.com/waigitdas/Mitochondrial-DNA-Research/tree/main/Knowledge_Graph/Analytics/Back_mutations">back mutations<</a></li>
-</ol>
+- **Subtraction (−):** `apoc.coll.subtract(A, B)`  
+- **Intersection (∩):** `apoc.coll.intersection(A, B)`  
+- **Containment (⊆):** `apoc.coll.containsAll(A, B)`  
+- **Union (∪):** `apoc.coll.union(A, B)`  
+- **Disjointness (∅):** `apoc.coll.disjoint(A, B)`  
+- **Distinct extraction (∪ᵢ):** `apoc.coll.toSet(A)`  
+- **List flattening (⋃):** `apoc.coll.flatten(A)`  
+- **Duplicate neighbor removal (≡):** `apoc.coll.dropDuplicateNeighbors(A)`  
+- **Sorting (⇑):** `apoc.coll.sort(A)`  
+
+## Detecting Missing Variants  
+Missing variants are identified by subtracting the **sequence variants** from the **path variants**:  
+
+```cypher
+apoc.coll.subtract(path_variants, sequence_variants)
+```
+
+## Key Observations from the Excel Workbook  
+- **Only 3%** of GenBank sequences contain all the defining variants required for their assigned haplogroup.  
+- **At least one sequence** in **99% of haplogroups** is missing required variants.  
+- **Traversal failures:** All paths from Eve to a haplogroup node fail at some point due to missing variants.  
+- **C16189T is the most commonly missed variant**, discussed in detail [here].  
+- **"Missing" variant regions often contain mutations**—just not the ones expected to be there. See the discussion on **back mutations** [here].  
+
