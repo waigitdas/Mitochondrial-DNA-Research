@@ -29,4 +29,4 @@ The C16189T variant has long been recognized as a problematic marker in mitochon
 
 <img src="https://github.com/waigitdas/Mitochondrial-DNA-Research/blob/main/Knowledge_Graph/images/C16189T_Veen_diagram.png" width="50%" height="50%">
 
-The case study of the 6 sequences with 3 variants in the 16189 region shows sequence whicch has C16189T and two closely adjacent variants. These complex matching challenges were handled correctly by the knowledge graph analytics. 
+The case study of the 6 sequences with 3 variants in the 16189 region shows sequence which have C16189T and two closely adjacent variants. These complex matching challenges were handled correctly by the knowledge graph analytics. 
