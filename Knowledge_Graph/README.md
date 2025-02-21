@@ -6,9 +6,11 @@
  <li>Ony 3% of sequences have all the variants required for their haplogroup assignment</li>
  <li>Only 1% of sequences have the same number of path variants as sequences in their parent haplogroup</li>
  <li>Traversals for paths from Eve to nodes for the assigned haplogroup fail for lack of required variants</li>
- <li>The haplotree model is fatally flawed.</li>
+ <li>The haplotree model is seriously flawed.</li>
 </ol>
-
+ <hr>
+<h3>Executive Summary</h3>
+ 
 A mitochondrial DNA (mtDNA) knowledge graph (KG) was constructed in sequential steps in a Neo4j native graph database. GenBank full sequences were loaded into mt_seq nodes with their assigned haplogroup recorded as a property. The sequences were parsed using 40-base reference probes, producing in silico probes. Overlapping probes were stitched together and flanking regions from the full sequences added to ensure unique targeting to homologous positions in the reference sequence. The alignment of probes with the homologous reference sequence enabled comparisons using the diff-match-patch (DMP) algorithm, facilitating the annotation of probes with variants. Relationships between mt_seq, probe, and variant nodes formed the core of the initial graph.
 
 The mtDNA haplotree was loaded into the KG and used to generate a derivative descendancy graph, which replicated the haplotree’s branching structure while harmonizing haplogroup naming and pruning variants that were absent from the full sequence data. The knowledge graph was enhanced by memorialized analytical results within the KG by ddition of new nodes, relationships, or properties.
