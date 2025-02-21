@@ -1,4 +1,6 @@
 # Dropped Variants
+<h3><strong><em>Only 1% of sequences inherit all variants from haplogroup parent sequences</em></strong></h3>
+
 
 This folder has files evaluating missing variants from the perspective of parent-child haplogroups in the haplotree. Sequences have assigned haplogroups. This assignment was done using the variant lists for the sequence. The dnode tree is derived from the haplotree, with back mutations removed. Each sequence is linkedto the haplotree by a seq_dnode relationship. The haplotree hierarchy is rendered with the dnode_child relationship. We can then create a hg_parent_child relationship which links together sequences which have haplogroups that are in a parent-child relationship in the haplotree. 
 
