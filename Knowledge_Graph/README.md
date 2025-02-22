@@ -2,7 +2,7 @@
 
  ### Key takeaways
 <ol>
- <li>Probes aremuch more speficity than individual variants.</li>
+ <li>Probes are much more speficity than individual variants.</li>
  <li>Ony 3% of sequences have all the variants required for their haplogroup assignment</li>
  <li>Only 1% of sequences have the same number of path variants as sequences in their parent haplogroup</li>
  <li>Traversals for paths from Eve to nodes for the assigned haplogroup fail for lack of required variants</li>
