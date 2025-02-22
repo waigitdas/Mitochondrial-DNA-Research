@@ -1,4 +1,4 @@
 # Neo4j
  
-The knowlege graph is build in Neo4j Enterprise v 5.26.1 on a Dell Desktop PC. The database is perse ~3gB in size and the server requires additional space. In general, the storage space fora graph database is about half that of a relational database. Thecurrent knowledge graph has an exuberance of nodes, relationships, propteries and indices to support the research. A less exuberant environment would be sufficient for focussed projects.
+The knowlege graph is build in Neo4j Enterprise v 5.26.1 on a Dell Desktop PC. The database is perse ~3GBin size and the server requires additional space. In general, the storage space fora graph database is about half that of a relational database. Thecurrent knowledge graph has an exuberance of nodes, relationships, propteries and indices to support the research. A less exuberant environment would be sufficient for focussed projects.
 
