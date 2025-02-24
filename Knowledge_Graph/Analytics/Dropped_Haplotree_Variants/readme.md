@@ -59,8 +59,3 @@ A Venn diagram is used to represent these sets:
 
 ## **Conclusion**
 This set-theoretic approach provides a precise way to analyze dropped variants in mtDNA sequences, ensuring that only meaningful mutation losses are considered. The methodology helps clarify evolutionary changes and refine haplogroup assignment processes.
-
----
-
-For further analysis, this methodology can be extended by incorporating additional metadata, such as mutation frequencies and phylogenetic context.
-
