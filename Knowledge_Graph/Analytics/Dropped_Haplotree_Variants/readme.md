@@ -55,7 +55,7 @@ A Venn diagram is used to represent these sets:
 - **Dropped Path Variants**: Variants lost in the child.
 - **Corrected Dropped Path Variants**: True losses after excluding start-back mutations.
 
-![Venn Diagram Representation](insert_image_here)
+<img src="https://github.com/waigitdas/Mitochondrial-DNA-Research/blob/main/Knowledge_Graph/images/dropped_variants.png" width="70%" height="70%">
 
 ## **Conclusion**
 This set-theoretic approach provides a precise way to analyze dropped variants in mtDNA sequences, ensuring that only meaningful mutation losses are considered. The methodology helps clarify evolutionary changes and refine haplogroup assignment processes.
