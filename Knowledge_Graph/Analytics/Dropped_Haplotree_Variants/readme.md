@@ -14,7 +14,7 @@ The dropped variants reported exclude any back mutations appearing in the parent
 -->
 <hr>
 
-# Analysis of Dropped Path Variants in Parent-Child mtDNA Sequences
+# Set Algebra of Dropped Path Variants 
 
 ## Overview
 This document explains the set algebra used to analyze dropped variants between parent and child mitochondrial DNA (mtDNA) sequences. The analysis is based on set operations performed in a Neo4j knowledge graph.
