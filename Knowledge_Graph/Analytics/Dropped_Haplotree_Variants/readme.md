@@ -12,3 +12,55 @@ We can now compare the parent and child sequences using set algebra. By subtract
 
 The dropped variants reported exclude any back mutations appearing in the parent node.  The term dropped distinguishes them from back mutations. The term dropped is also distinct from "missing" because dropped has a context that missed lacks. 
 -->
+<hr>
+
+# Analysis of Dropped Path Variants in Parent-Child mtDNA Sequences
+
+## Overview
+This document explains the set algebra used to analyze dropped variants between parent and child mitochondrial DNA (mtDNA) sequences. The analysis is based on set operations performed in a Neo4j knowledge graph.
+
+## **Set Definitions**
+- **P**: Parent sequence variants (`parent.all_variants`)
+- **C**: Child sequence variants (`child.all_variants`)
+- **P_path**: Path-specific variants in the parent (`dp.path_variants`)
+- **C_path**: Path-specific variants in the child (`dc.path_variants`)
+- **P_rel**: Parent’s relevant variants (i.e., mutations found in the parent’s path)
+  
+  \[ P_{rel} = P \cap P_{path} \]
+  
+- **C_rel**: Child’s relevant variants (i.e., mutations found in the child’s path)
+  
+  \[ C_{rel} = C \cap C_{path} \]
+  
+- **D_raw**: Dropped path variants (mutations present in the parent but absent in the child)
+  
+  \[ D_{raw} = P_{rel} \setminus C_{rel} \]
+  
+- **S**: Start-back mutations (known reversions that should not be considered lost)
+- **D_corr**: Corrected dropped path variants (excluding expected reversions)
+  
+  \[ D_{corr} = D_{raw} \setminus S \]
+  
+## **Filtering Criteria**
+The final dataset includes only cases where the corrected dropped path variant set is non-empty:
+
+\[ |D_{corr}| > 0 \]
+
+## **Visualization**
+A Venn diagram is used to represent these sets:
+
+- **Parent Relevant Variants**: Variants found in both the parent’s sequence and path.
+- **Child Relevant Variants**: Variants found in both the child’s sequence and path.
+- **Path Variants**: All path-associated variants.
+- **Dropped Path Variants**: Variants lost in the child.
+- **Corrected Dropped Path Variants**: True losses after excluding start-back mutations.
+
+![Venn Diagram Representation](insert_image_here)
+
+## **Conclusion**
+This set-theoretic approach provides a precise way to analyze dropped variants in mtDNA sequences, ensuring that only meaningful mutation losses are considered. The methodology helps clarify evolutionary changes and refine haplogroup assignment processes.
+
+---
+
+For further analysis, this methodology can be extended by incorporating additional metadata, such as mutation frequencies and phylogenetic context.
+
