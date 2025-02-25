@@ -62,3 +62,10 @@ This set-theoretic approach provides a precise way to analyze dropped variants i
 <hr>
 
 To determine whether dropped and added transition changes were significant and given the large dataset and non-normal distribution, the Mann-Whitney U non-parametric method was used to compute highly significant differences. The U-statistics of -2,189,774 for dropped variants and -774,216 for added variants had corresponding Z-scores of -287,575.79 and -119,501.46. The probability of these differences occurring by chance is effectively zero.
+
+| Variant Transition | N        | U Mean ± SD  | Z-score      |
+|-------------------|----------|--------------|-------------|
+| Dropped          | 2,189,774 | 338 ± 7.62   | -287575.79  |
+| Added            | 774,216   | 242 ± 6.48   | -119501.46  |
+
+
